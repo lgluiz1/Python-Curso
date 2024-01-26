@@ -1,0 +1,6 @@
+n1 = input('Digite alguma coisa?')
+print (n1, 'É do tipo primitivo', type(n1))
+print('{} esta em Maiusculo?{} esta em Minusculo? {}'.format(n1, n1.isupper(), n1.islower()))
+print('{} e um numero? {} são letras? {}'.format(n1, n1.isnumeric(), n1.isalpha()))
+print('{} e verdadeiro ou falso? {}'.format(n1, bool(n1)))
+print('{} começa com a letra maiuscula?'.format(n1, n1.istitle()))
