@@ -5,9 +5,12 @@ from math import factorial
 
 n1 = int(input('DIGITE UM VALOR!  '))
 n2 = n1
-while n2 != 2:
+fatorial = factorial(n1)
+print('FATORIAL DE {}! = '.format(n1),end='')
+while n2 > 1:
+    print('{}'.format(n2), end='')
     n2 -= 1
-    calculo = n1 * n2
-    calculo += calculo
-    sleep(1)
-print(calculo)
+    if n2 > 1:
+        print(' x ', end='')
+        
+print(' = {}'.format(fatorial))

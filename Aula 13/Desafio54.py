@@ -7,7 +7,7 @@ from datetime import date
 ano = date.today().year
 contado_maior = 0
 contado_menor = 0
-for c in range (1,8):
+for c in range (1,80):
     idade = int(input('Qual Ano Da {}º Pessoa?  '.format(c)))
     if ano - idade < 18:
         contado_maior += 1

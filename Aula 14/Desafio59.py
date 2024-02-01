@@ -24,17 +24,24 @@ while opções != 5:
     print ('DIGITE 5 PARA SAIR')
     print('=='*10)
     opções = int(input('QUAL OPÇÃO VOCE ESCOLHE? '))
+
     if opções == 1:
        soma = n1 + n2
        print('A SOMA DOS NUMERO {} + {} = {}'.format(n1,n2,soma))
+
     if opções == 2 :
         m = n1 * n2
         print('OS VALORES MULTIPLICADOS {}X{}={}'.format(n1,n2,m))
+
     if opções == 3:
-        maior = n1 > n2
-        print('O MAIOR VALOR ENTRE ELE E {}'.format(maior))
+        if n1 > n2 :
+            print('O MAIOR VALOR ENTRE {} E {} E {}'.format(n1,n2,n1))
+        else:
+            print('O MAIOR VALOR ENTRE {} E {} E {}'.format(n1,n2,n2))
+        
     if opções == 4 :
         n1 = int(input('DIGITE UM VALOR!  '))
         n2 = int(input('DIGITE OUTRO VALOR !  '))
+        
 print('VOCE SAIU DO MENU')
     
